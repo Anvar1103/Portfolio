@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - bog'lanish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- header section -->
+
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__brand">
+                <a href="project1.html">
+                    <img src="1.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item active">
+                        <a href="project1.html">Asosiy</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Xizmatlarim</a>
+                    </li class="main-navigation__item">
+                    <li class="main-navigation__item">
+                        <a href="#">Mijozlarim</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- /header section -->
+
+    <div class="container">
+        <section class="contact">
+            <div class="section-title">
+                Men bilan bog'laning
+            </div>
+            <form action="/server.php" method="get">
+                <textarea name="message" id=""  rows="10" placeholder="Xabaringzni kiriting"></textarea>
+                <div class="half-row contact__firstname"> 
+                    <input type="text" placeholder="Ismingizni kiriting" name="firstname">
+                </div>
+                <div class="half-row contact__email" >
+                    <input type="email" placeholder="Emailingizni kiriting" name="email">
+                </div>
+               
+                
+                <input type="text" name="subject" id="" placeholder="Xat mazmuni">
+                <button class="button contact__send" type="submit"> Xabar jo'natish</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Asosiy</a>
+                </li>
+                <li>
+                    <a href="#">Men haqimda</a>
+                </li>
+                <li>
+                    <a href="#">Xizmatlarim</a>
+                </li>
+                <li>
+                    <a href="#">Mijozlarim</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Sheriklar</a>
+                </li>
+
+            </ul>
+        </nav>
+    </footer>
+    <!-- /Footer section -->
+
+</body>
+
+</html>

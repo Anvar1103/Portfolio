@@ -1,0 +1,365 @@
+
+/* Main section styles */
+
+.main-banner{
+    background: url(banner.png) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+    box-sizing: border-box;             
+}
+.main-section {
+    padding: 100px 30px;
+}
+
+.main-section>div {
+    width: 50%;
+    float: left;
+}
+
+.main-section__image {
+    text-align: right;
+}
+
+.main-section__welcome {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #797979;
+}
+
+.main-section__interduction {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #05364E;
+}
+
+.main-section__position {
+    color: #05364E;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main-section__social-networks a {
+    color: #8fa1aa;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.main-section__action {
+    margin-top: 30px;
+}
+
+
+
+/* Statistics section */
+.statistics {
+    padding-top: 100px;
+}
+
+.statistics__item {
+    display: inline-block;
+    background: #f8faff;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 20px;
+    width: 150px;
+}
+
+.statistics__number {
+    font-size: 27px;
+    margin-bottom: 5px; 
+    background: linear-gradient(90deg,#1345e6 0%,#ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statistics__title {
+    font-size: 16px;
+    color: #797979;
+    font-weight: 300;
+}
+
+/* Services section styles */
+.services {
+    padding-top: 100px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    padding: 60px 30px;
+    background-color: #f8faff;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.servece-card__title {
+    color: #05364d;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.service-card__description {
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #797979;
+}
+
+.service-card__link {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364d;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    background: #5f30ff;
+}
+
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__description,
+.service-card:hover .service-card__link {
+    color: #ffffff;
+}
+
+
+/* Clients section styles */
+#clients {
+    padding-top: 100px;
+}
+
+.client-item>div {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.client-item__image img {
+    width: 100%;
+}
+
+.client-item__info {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.client-item__name {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.client-item__position {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.client-item__review {
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.client-item__rate{
+    color: #FFD804;
+}
+
+/* Portfolio section styles */
+.portfolio{
+    padding: 100px 0;
+}
+
+.portfolio-filters{
+    list-style: none;
+    padding-left: 0%;
+    margin-top: 50px;
+}
+
+
+.portfolio-filters li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio-filters li.active,.portfolio-filters li:hover{
+    color: #1345e6;
+}
+.portfolio-item{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-item1{
+    padding-left: 0%;
+}
+.portfolio-items{
+    margin-top: 50px;
+    position: relative;
+}
+
+.portfolio-item__image{
+    width: 100%;
+}
+
+
+.portfolio-item2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.portfolio-item3{
+    position: absolute;
+    top: 320px;
+    right: 0;
+}
+.portfolio-item__info{
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: white;
+    visibility: hidden ;
+}
+
+
+.portfolio-item__info a{
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+.portfolio-item__overlay{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(95, 48, 255,0.9);
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item:hover .portfolio-item__overlay{
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+}
+
+.portfolio-item:hover .portfolio-item__info{
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
+    cursor: pointer;
+}
+
+
+/* Blog section styles */
+.blog{
+    padding-top:100px ;
+}
+
+.blog-items{
+    margin-top: 50px;
+}
+
+.blog-item{
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+ 
+
+}
+.blog-item__image img{
+    width: 100%;
+}
+
+
+.blog-item__info{ 
+    background: #f8faff;
+    padding: 10px;
+    color: #797979;
+}
+
+.blog-item__main-info span{
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: lighter;
+}
+
+.blog-item__info i{
+    margin-right: 5px;
+}
+
+.blog-item__title{
+    font-size: 20px;
+    margin-top:20px;
+    margin-bottom: 15px;
+    color: #05364d;
+    font-weight: 700;
+}
+
+.blog-item__description{
+    line-height: 27px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.blog-item__learn-more{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364d;
+    text-decoration: none;
+}
+
+.blog-item__learn-more:hover{
+    color: #ed239f;
+}
+
+.blog-item__image img:hover{
+    transform: scale(1.1);
+    box-sizing: border-box;
+}
+.blog-item__image{
+    overflow: hidden;
+}
+
+.blog-item:hover{
+    box-shadow: 0px 10px 20px lightgrey;
+}
+
+.blog-item:hover .blog-item__info{
+    background-color: #ffffff ;
+}
+
+
+/* Partners section styles */
+
+.partners{
+    padding-top: 100px;
+    
+}
+.partner{
+    display: inline-block;
+    padding: 0 30px ;
+}
